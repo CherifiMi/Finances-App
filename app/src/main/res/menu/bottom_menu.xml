@@ -7,13 +7,13 @@
     <item
         android:id="@+id/reward"
         android:icon="@drawable/ticket_star"
-        android:title="Reward" />
+        android:title="Rewards" />
     <item
         android:id="@+id/spending"
         android:icon="@drawable/buy"
         android:title="Spending" />
     <item
         android:id="@+id/score"
-        android:icon="@drawable/discount"
+        android:icon="@drawable/score"
         android:title="Score" />
 </menu>

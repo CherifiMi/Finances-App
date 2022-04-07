@@ -9,31 +9,30 @@
 
 
     <com.google.android.material.card.MaterialCardView
-        app:cardCornerRadius="100dp"
-        android:outlineSpotShadowColor="@color/purple_500"
-        app:cardElevation="15dp"
-        app:cardBackgroundColor="@color/back"
+        android:id="@+id/materialCardView6"
         android:layout_width="0dp"
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="80dp"
+        android:outlineSpotShadowColor="@color/purple_500"
         android:text="Login"
+        app:cardBackgroundColor="@color/back"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="529dp" >
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/mybtn"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:textColor="@color/purple_700"
-            android:textSize="18dp"
-            android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Login" />
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </com.google.android.material.card.MaterialCardView>
 
     <ImageView
@@ -46,4 +45,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.26" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,29 +8,17 @@
     tools:context=".ui.Home">
 
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/p_icon"
-        app:tint="@color/purple_700"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ezulus"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Pezulus"
         android:textColor="@color/purple_700"
         android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
@@ -57,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="204dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/visa"
+                android:src="@drawable/myvisa"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +78,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="22dp"
-                    android:text="DoorDash"
+                    android:text="Zepto"
                     android:textColor="@color/txt"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -102,7 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10% Off One Order"
-                    android:textColor="#FF2C0E"
+                    android:textColor="#FF3269"
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -145,7 +133,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="16dp"
-            android:progress="50"
+            android:progress="80"
             app:indicatorColor="@color/purple_700"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView7"
@@ -160,7 +148,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:alpha=".7"
-            android:text="Available limit $1,60.000"
+            android:text="Available limit ₹60,000"
             android:textColor="@color/txt"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -203,8 +191,8 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView5"
         app:cardBackgroundColor="@color/back"
-        android:layout_width="150dp"
-        android:layout_height="200dp"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
         android:layout_marginTop="32dp"
         app:cardCornerRadius="25dp"
         app:cardElevation="8dp"
@@ -216,34 +204,33 @@
 
         <Button
             android:id="@+id/button"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textAllCaps="false"
             android:textAlignment="textStart"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Bills Payment \n\n          >" />
+            android:text="Bills Payment \n\n" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:background="#05DCC3"
-        app:cardCornerRadius="100dp"
         android:outlineSpotShadowColor="@color/purple_500"
+        app:cardCornerRadius="100dp"
         app:cardElevation="5dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView">
+        tools:layout_editor_absoluteY="7dp">
 
         <ImageView
             android:id="@+id/imageView7"
+            android:scaleType="centerCrop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/three" />
+            android:src="@drawable/profile" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -261,13 +248,13 @@
 
         <Button
             android:id="@+id/button2"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textAllCaps="false"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Send Money \n        👩🏻🧔🏻🧒🏻" />
+            android:text="Send Money" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
@@ -283,13 +270,13 @@
         app:layout_constraintTop_toBottomOf="@+id/cardView6" >
         <Button
             android:id="@+id/button22"
-            android:textColor="@color/purple_700"
+            android:textColor="@color/white"
             android:textSize="18sp"
             android:textAllCaps="false"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="My Rewards \n      🧁👚🎭" />
+            android:text="My Rewards" />
     </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

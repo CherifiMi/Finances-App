@@ -10,22 +10,22 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView4"
+        android:layout_width="168dp"
+        android:layout_height="0dp"
         android:outlineSpotShadowColor="@color/purple_500"
         app:cardCornerRadius="43dp"
         app:cardElevation="15dp"
-        android:layout_width="168dp"
-        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="@+id/cardView2"
-        app:layout_constraintTop_toTopOf="@+id/cardView3" >
+        app:layout_constraintTop_toTopOf="@+id/cardView3">
 
         <ImageView
             android:id="@+id/imageView12"
-            android:scaleType="centerCrop"
-            android:scaleY="1.22"
-            android:scaleX="1.22"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:scaleX="1.22"
+            android:scaleY="1.22"
             android:src="@drawable/head" />
     </com.google.android.material.card.MaterialCardView>
 
@@ -33,9 +33,9 @@
         android:id="@+id/cardView2"
         android:layout_width="0dp"
         android:layout_height="200dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="24dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,16 +47,16 @@
             android:id="@+id/imageView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleX="1.7"
-            android:scaleY="1.7"
-            android:src="@drawable/gifoo" />
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:src="@drawable/rewardsn" />
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:text="Your have 3872 Pezulus bucks:"
         android:textColor="@color/txt"
         android:textSize="20sp"
@@ -83,6 +83,45 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:src="@drawable/gold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView5"
+        android:outlineSpotShadowColor="@color/purple_500"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="43dp"
+        app:cardElevation="15dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" >
+        <ImageView
+            android:scaleY="1.22"
+            android:scaleX="1.22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic2" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:outlineSpotShadowColor="@color/purple_500"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="43dp"
+        app:cardElevation="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView5"
+        app:layout_constraintEnd_toEndOf="@+id/cardView4"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView5" >
+        <ImageView
+            android:scaleY="1.22"
+            android:scaleX="1.22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/oil" />
     </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
