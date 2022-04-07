@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAFAFA"
+    android:background="@color/back"
     tools:context=".ui.Score">
 
 
@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.31" />
 
     <TextView
         android:id="@+id/textView15"
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:text="as on Jan 2021"
-        android:textColor="@color/black"
+        android:textColor="@color/txt"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView4"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:text="Your CIBL Score"
-        android:textColor="#000000"
+        android:textColor="@color/txt"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView15"
@@ -54,7 +54,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="80dp"
         android:text="Your CIBL Score"
-        android:textColor="#000000"
+        android:textColor="@color/txt"
         android:textSize="23sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="746"
-        android:textColor="#000000"
+        android:textColor="@color/txt"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
@@ -145,20 +145,45 @@
         android:id="@+id/imageView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="72dp"
         android:src="@drawable/graph"
         app:layout_constraintEnd_toEndOf="@+id/materialCardView4"
         app:layout_constraintStart_toStartOf="@+id/materialCardView4"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView4" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="746"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/imageView10"
-        app:layout_constraintEnd_toEndOf="@+id/materialCardView4"
-        app:layout_constraintStart_toEndOf="@+id/materialCardView4" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-16dp"
+        android:layout_marginEnd="-16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/textView16">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="3.5"
+            android:scaleY="3.5"
+            android:src="@drawable/oc" />
+    </androidx.cardview.widget.CardView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-40dp"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/gf"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

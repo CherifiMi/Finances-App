@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAFAFA"
+    android:background="@color/back"
     tools:context=".ui.Reward">
 
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView4"
-        app:cardCornerRadius="15dp"
+        android:outlineSpotShadowColor="@color/purple_500"
+        app:cardCornerRadius="43dp"
         app:cardElevation="15dp"
         android:layout_width="168dp"
         android:layout_height="0dp"
@@ -21,97 +22,67 @@
         <ImageView
             android:id="@+id/imageView12"
             android:scaleType="centerCrop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/five" />
+            android:scaleY="1.22"
+            android:scaleX="1.22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/head" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView2"
-        app:cardElevation="15dp"
-        app:cardCornerRadius="15dp"
         android:layout_width="0dp"
-        android:layout_height="160dp"
+        android:layout_height="200dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
+        <pl.droidsonroids.gif.GifImageView
             android:id="@+id/imageView9"
-            android:scaleType="centerCrop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/two" />
+            android:scaleX="1.7"
+            android:scaleY="1.7"
+            android:src="@drawable/gifoo" />
     </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:text="Your have 3872 Pezulus bucks:"
+        android:textColor="@color/txt"
         android:textSize="20sp"
-        android:text="Your Rewards:"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/cardView2"
         app:layout_constraintTop_toBottomOf="@+id/cardView2" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView3"
-        app:cardCornerRadius="15dp"
+        android:outlineSpotShadowColor="@color/purple_500"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="43dp"
         app:cardElevation="15dp"
-        android:layout_width="168dp"
-        android:layout_height="240dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/cardView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" >
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ImageView
             android:id="@+id/imageView11"
+            android:scaleY="1.22"
+            android:scaleX="1.22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/four" />
+            android:src="@drawable/gold" />
     </com.google.android.material.card.MaterialCardView>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView5"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="15dp"
-        android:layout_width="168dp"
-        android:layout_height="240dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/cardView3"
-        app:layout_constraintStart_toStartOf="@+id/cardView3"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3" >
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:scaleType="centerCrop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/one" />
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="168dp"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="15dp"
-        android:layout_height="240dp"
-        app:layout_constraintBottom_toBottomOf="@+id/cardView5"
-        app:layout_constraintEnd_toEndOf="@+id/cardView4"
-        app:layout_constraintStart_toStartOf="@+id/cardView4"
-        app:layout_constraintTop_toTopOf="@+id/cardView5" >
-
-        <ImageView
-            android:id="@+id/imageView14"
-            android:scaleType="centerCrop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/three" />
-    </com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

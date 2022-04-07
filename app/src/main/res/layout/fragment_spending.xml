@@ -4,76 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAFAFA"
+    android:background="@color/back"
     tools:context=".ui.Spending">
 
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="220dp"
-        android:layout_height="220dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ball"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
-
-    <TextView
-        android:id="@+id/txt1"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="🍇  200$ on Fruit"
-        app:layout_constraintStart_toStartOf="@+id/txt2"
-        app:layout_constraintTop_toBottomOf="@+id/txt2" />
-
-    <TextView
-        android:id="@+id/txt2"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:text="🍔 100$ on Food"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.19999999" />
-
-    <TextView
-        android:id="@+id/txt3"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="💡 100$ on study"
-        app:layout_constraintStart_toStartOf="@+id/txt4"
-        app:layout_constraintTop_toBottomOf="@+id/txt4" />
-
-    <TextView
-        android:id="@+id/txt4"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="⚽ 30,000$ on balls"
-        app:layout_constraintStart_toStartOf="@+id/txt5"
-        app:layout_constraintTop_toBottomOf="@+id/txt5" />
-
-    <TextView
-        android:id="@+id/txt5"
-        android:textColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="🎉 1080$ on things"
-        app:layout_constraintStart_toStartOf="@+id/txt1"
-        app:layout_constraintTop_toBottomOf="@+id/txt1" />
-
     <TextView
         android:id="@+id/textView6"
-        android:textColor="@color/black"
+        android:textColor="@color/txt"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -101,7 +38,7 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:textColor="@color/black"
+        android:textColor="@color/txt"
         android:textSize="18dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="$34,00"
-        android:textColor="@color/black"
+        android:textColor="@color/txt"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView11"
@@ -129,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text="from"
-        android:textColor="@color/black"
+        android:textColor="@color/txt"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintStart_toEndOf="@+id/textView12"
@@ -141,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:text=" $ 35,000"
-        android:textColor="@color/black"
+        android:textColor="@color/txt"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/textView13"
@@ -152,23 +89,27 @@
         android:layout_width="170dp"
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="48dp"
+        android:outlineSpotShadowColor="@color/purple_500"
+        app:cardBackgroundColor="@color/back"
         app:cardCornerRadius="100dp"
         app:cardElevation="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/imageView13">
 
         <ImageButton
             android:id="@+id/imageButton2"
-            app:tint="@color/purple_700"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:src="@drawable/btn1" />
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/btn1"
+            app:tint="@color/purple_700" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView3"
+        android:outlineSpotShadowColor="@color/purple_500"
+        app:cardBackgroundColor="@color/back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
@@ -181,7 +122,7 @@
         <ImageButton
             android:id="@+id/imageButton3"
             app:tint="@color/purple_700"
-            android:background="@android:color/transparent"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/btn2" />
@@ -190,6 +131,8 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:outlineSpotShadowColor="@color/purple_500"
+        app:cardBackgroundColor="@color/back"
         android:layout_marginStart="24dp"
         app:cardCornerRadius="100dp"
         app:cardElevation="5dp"
@@ -201,11 +144,25 @@
         <ImageButton
             android:id="@+id/imageButton4"
             app:tint="@color/purple_700"
-            android:background="@android:color/transparent"
+            android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:src="@drawable/sigma" />
     </com.google.android.material.card.MaterialCardView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/gff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.39" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
