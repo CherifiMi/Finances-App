@@ -160,7 +160,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" ₹ 40,000"
+            android:text=" ₹40,000"
             android:textColor="@color/purple_700"
             android:textSize="30sp"
             android:textStyle="bold"
@@ -211,7 +211,7 @@
             android:background="?attr/selectableItemBackgroundBorderless"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Bills Payment \n\n" />
+            android:text="Bills Payment \n\n >" />
     </com.google.android.material.card.MaterialCardView>
 
     <com.google.android.material.card.MaterialCardView
