@@ -102,18 +102,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView4" />
 
-    <TextView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/back"
+        app:cardElevation="8dp"
+        android:outlineSpotShadowColor="@color/purple_500"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
         android:layout_marginTop="60dp"
-        android:text="View Report"
-        android:textColor="@color/txt"
-        android:textSize="38sp"
-        android:textStyle="bold"
+        app:cardCornerRadius="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView7" />
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+        <Button
+            android:id="@+id/button"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/txt"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="View Report" />
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

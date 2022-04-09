@@ -10,6 +10,7 @@
 
     <TextView
         android:id="@+id/textView"
+        android:textStyle="bold|italic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -45,9 +46,10 @@
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="wrap_content"
-                android:layout_height="190dp"
+                android:layout_height="170dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/myvisa"
+                app:flow_verticalAlign="top"
+                android:src="@drawable/visa4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -189,7 +191,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:src="@drawable/profile" />
+            android:src="@drawable/profilepic" />
     </com.google.android.material.card.MaterialCardView>
 
     <androidx.gridlayout.widget.GridLayout
@@ -259,15 +261,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:text=">"
+                    android:textColor="@color/txt"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button3"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
                 <Button
                     android:id="@+id/button3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:text="Bills\nPayment \n\n >\n\n"
+                    android:text="Bills\nPayment \n\n\n\n"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
+                    android:textColor="@color/txt"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
